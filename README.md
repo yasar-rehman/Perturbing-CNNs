@@ -7,6 +7,7 @@ Face presentation attack detection (PAD) in unconstrained conditions is one of t
 
 <p align="center">
   <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0262885619304512-gr2.jpg" />
+  <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0262885619304512-gr3.jpg" />
 </p>
 
 
