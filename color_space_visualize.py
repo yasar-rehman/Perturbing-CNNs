@@ -121,22 +121,14 @@ model_final = Res_model
 # print(model_final.summary())  # print the model summary
 
 
-model_final.load_weights('/home/yaurehman2/Documents/liveness_perturbation/livenet_hybrid_ckpt/oulu/protocol_1_eq_samp/color_lbp_rgb_online_p1_8_6_5x5_120x120_30.h5')
+model_final.load_weights('/liveness_perturbation/livenet_hybrid_ckpt/oulu/protocol_1_eq_samp/color_lbp_rgb_online_p1_8_6_5x5_120x120_30.h5')
 
 layer_name = 'lbp_rgb_fusion_1'
 
 
 new_model = Model(model_final.input, model_final.get_layer(layer_name).output)
 
-
-
-file_path = '/home/yaurehman2/Documents/Newwork/OULU_FACE/train/81.jpg'
-
-# file_path = '/home/yaurehman2/Documents/Newwork/REPLY_ATTACK_FACE_Mod_corr/train/9785.jpg'
-
-# file_path = '/home/yaurehman2/Documents/Newwork/CASIA_FACE_4C/train_4C/300.jpg'
-
-
+file_path = '/Newwork/OULU_FACE/train/81.jpg'
 
 feature_vector = []
 labels = []
@@ -155,11 +147,6 @@ lbp_im_data = comput_ch_LBP(img, p=6, r=8)
 v = new_model.predict([img, lbp_im_data])
 
 output = np.squeeze(v, axis=0)
-
-
-
-
-
 
 plt.rcParams['figure.figsize'] = (15, 15)
 f, ax = plt.subplots(4, 4)
