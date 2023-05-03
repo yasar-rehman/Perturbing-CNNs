@@ -88,14 +88,14 @@ img_dim_color = 3
 # Res_model = Noise_estimator(img_rows, img_cols, img_dim_color)
 #
 #
-# Res_model.load_weights('/home/yaurehman2/Documents/Face_liveness_Noise_modeling/training_files_mult/auto_encod_ckpt/VGG16_A_GAP_OULU_solocam_autoencod_20.h5')
+# Res_model.load_weights('/training_files_mult/auto_encod_ckpt/VGG16_A_GAP_OULU_solocam_autoencod_20.h5')
 #
 # output = cnn_hybrid_color_single(Res_model.input, Res_model.output)  # load the model
 #
 # model_final = Model(inputs=Res_model.input,
 #                     outputs=output)
 # model_final.summary()
-# model_final.load_weights('/home/yaurehman2/Documents/Face_liveness_Noise_modeling/training_files_mult/multi_scale/oulu/VGG16_A_solo_GAP_binary_mult_noise_disp_adaptive_relu_3x3_20.h5')
+# model_final.load_weights('/training_files_mult/multi_scale/oulu/VGG16_A_solo_GAP_binary_mult_noise_disp_adaptive_relu_3x3_20.h5')
 # layer_name = 'lambda_2'
 
 
