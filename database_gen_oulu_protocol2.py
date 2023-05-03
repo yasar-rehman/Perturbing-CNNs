@@ -1,10 +1,10 @@
 # Database Generation for Face-Anti Spoofing
 # The following script will clip x sequential or random frames from videos and store that in a separate folders or
 # database with corresponding labels
-# we use h5py to make this dataset
+# 
 
-# Database = CASIA-FASD
-# Classes: Real, Wrapped Photo Attack, Cut Photo Attack, Video Attack
+# 
+# 
 # We first take a frame, and then detect the face within the frame. After detection of face, we resize the face part to
 # include some of the background area within the frame. After while, we either store that into a separate directory or
 # in h5py file.
@@ -16,7 +16,7 @@ import cv2
 import os
 import dlib
 detector = dlib.get_frontal_face_detector()
-face_cascade = cv2.CascadeClassifier('/home/yaurehman2/virtualenv-py2/opencv/opencv-3.3.0/data/haarcascades_cuda/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('/opencv/opencv-3.3.0/data/haarcascades_cuda/haarcascade_frontalface_default.xml')
 
 
 def video_data(filepath, frame_length):
