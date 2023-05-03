@@ -19,9 +19,9 @@ from imutils.face_utils import rect_to_bb, shape_to_np, FaceAligner
 from imutils.face_utils.helpers import FACIAL_LANDMARKS_IDXS
 
 detector = dlib.get_frontal_face_detector()
-face_cascade = cv2.CascadeClassifier('/home/yaurehman2/virtualenv-py2/opencv/opencv-3.3.0/data/haarcascades_cuda/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('/opencv/opencv-3.3.0/data/haarcascades_cuda/haarcascade_frontalface_default.xml')
 
-path = '/home/yaurehman2/Documents/stereo_face_liveness/shape_predictor_68_face_landmarks.dat'
+path = '/stereo_face_liveness/shape_predictor_68_face_landmarks.dat'
 
 predictor = dlib.shape_predictor(path)
 
