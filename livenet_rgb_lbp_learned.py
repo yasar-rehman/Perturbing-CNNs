@@ -36,7 +36,7 @@ tf.set_random_seed(1234)
 # -----------------------------------------------------------------------------------------------
 # import the essential functions required for computation
 # sys.path.insert(0, os.path.expanduser('~//CNN_networks'))
-# sys.export PYTHONPATH=/home/yaurehman2/PycharmProjects/face_anti_sp_newidea
+# sys.export PYTHONPATH=/face_anti_sp_newidea
 
 # print(sys.path)
 
@@ -468,7 +468,7 @@ def main(args):
 
         if test_acc > accuracy:
             model_final.save_weights(
-                '/home/yaurehman2/Documents/liveness_perturbation/livenet_hybrid_ckpt/oulu/protocol_1/'
+                '/liveness_perturbation/livenet_hybrid_ckpt/oulu/protocol_1/'
                 'learned_lbp_rgb_protocol1_perturb_rgb_hsv'
                 + str(args.lbp_pts) + '_' + str (args.lbp_r) + '_' + '5x5_160x160_online_lbp_rgb_lev1_' + str(args.max_epochs) + '.h5')
             accuracy = test_acc
@@ -479,14 +479,14 @@ def parser_arguments(argv):
 
     parser.add_argument('--tr_img_lab_r', type=str,
                         help='directory from where to get the training paths and ground truth',
-                        default='/home/yaurehman2/Documents/Newwork/OULU_FACE_Protocol1/train.txt')
+                        default='/Newwork/OULU_FACE_Protocol1/train.txt')
 
     # /home/yaurehman2/Documents/Newwork/REPLY_ATTACK_FACE_Mod_corr/train.txt
     # /home/yaurehman2/Documents/Newwork/OULU_FACE/train.txt
     # /home/yaurehman2/Documents/Newwork/CASIA_FACE_4C/train_4C_M.txt
     parser.add_argument('--tst_img_lab_r', type=str,
                         help='direcotry where test iamges are stored ',
-                        default='/home/yaurehman2/Documents/Newwork/OULU_FACE_Protocol1/dev.txt')
+                        default='/Newwork/OULU_FACE_Protocol1/dev.txt')
 
 
 
