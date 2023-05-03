@@ -17,7 +17,7 @@ import cv2
 import os
 import dlib
 detector = dlib.get_frontal_face_detector()
-face_cascade = cv2.CascadeClassifier('/home/yaurehman2/virtualenv-py2/opencv/opencv-3.3.0/data/haarcascades_cuda/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('/opencv/opencv-3.3.0/data/haarcascades_cuda/haarcascade_frontalface_default.xml')
 
 
 def video_data(filepath, frame_length):
